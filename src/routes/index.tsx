@@ -88,7 +88,7 @@ function Index() {
         >
           <a
             href="#projects"
-            className="bg-foreground px-7 py-3.5 text-xs tracking-[0.16em] text-background uppercase transition-opacity hover:opacity-85"
+            className="bg-primary px-7 py-3.5 text-xs tracking-[0.16em] text-primary-foreground uppercase transition-opacity hover:opacity-85"
           >
             View Projects
           </a>
