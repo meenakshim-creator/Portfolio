@@ -8,6 +8,8 @@ type Project = {
   tech: string;
   features?: string[];
   note?: string;
+  accent: string;
+  dash: string;
 };
 
 const projects: Project[] = [
@@ -18,6 +20,8 @@ const projects: Project[] = [
     description:
       "An interactive travel planning platform designed to help users explore destinations, create personalized itineraries, estimate budgets, and organize travel plans.",
     tech: "HTML · CSS · JavaScript · AI-based features",
+    accent: "text-primary",
+    dash: "before:text-primary",
     features: [
       "Destination exploration",
       "Itinerary planning",
@@ -32,6 +36,8 @@ const projects: Project[] = [
     description:
       "A technology-focused solution designed to support elderly users and caregivers through cognitive activities, reminders, multilingual accessibility, and caregiver-oriented tools.",
     tech: "React · FastAPI · SQLite · AI/ML",
+    accent: "text-marigold",
+    dash: "before:text-marigold",
     features: [
       "Cognitive games",
       "Adaptive difficulty",
@@ -49,6 +55,8 @@ const projects: Project[] = [
     description:
       "A smart product concept designed to help users organize medication schedules through reminders and structured pill management.",
     tech: "Hardware concept · Scheduling logic",
+    accent: "text-dusk",
+    dash: "before:text-dusk",
   },
 ];
 
@@ -64,7 +72,9 @@ export function Projects() {
             >
               <div className="grid gap-6 md:grid-cols-12 md:gap-10">
                 <div className="md:col-span-2">
-                  <span className="display text-4xl text-muted-foreground transition-colors duration-500 group-hover:text-primary md:text-5xl">
+                  <span
+                    className={`display text-4xl transition-colors duration-500 md:text-5xl ${p.accent}`}
+                  >
                     {p.number}
                   </span>
                 </div>
@@ -82,7 +92,7 @@ export function Projects() {
                   {p.features && (
                     <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted-foreground">
                       {p.features.map((f) => (
-                        <li key={f} className="before:mr-2 before:text-primary before:content-['—']">
+                        <li key={f} className={`before:mr-2 ${p.dash} before:content-['—']`}>
                           {f}
                         </li>
                       ))}

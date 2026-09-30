@@ -56,6 +56,9 @@ const activities = [
   "Exploring entrepreneurship and technology",
 ];
 
+const dotColors = ["bg-primary", "bg-dusk", "bg-marigold", "bg-blush", "bg-olive"];
+const numColors = ["text-primary", "text-marigold", "text-dusk", "text-blush", "text-olive"];
+
 function Index() {
   return (
     <div id="top" className="min-h-screen">
@@ -103,7 +106,10 @@ function Index() {
           className="rise mt-20 border-t border-hairline pt-6 text-sm text-muted-foreground"
           style={{ animationDelay: "340ms" }}
         >
-          Currently exploring — AI • Data Science • Software Development
+          Currently exploring —{" "}
+          <span className="text-primary">AI</span> •{" "}
+          <span className="text-marigold">Data Science</span> •{" "}
+          <span className="text-dusk">Software Development</span>
         </p>
       </section>
 
@@ -138,12 +144,17 @@ function Index() {
       </Section>
 
       {/* Skills */}
-      <Section id="skills" label="Skills">
+      <Section id="skills" label="Skills" tint="blue">
         <div className="space-y-0">
           {skillGroups.map((g, i) => (
             <Reveal key={g.heading} delay={i * 70}>
               <div className="grid gap-3 border-t border-hairline py-8 md:grid-cols-12 md:gap-10">
-                <h3 className="text-sm tracking-tight md:col-span-3">{g.heading}</h3>
+                <h3 className="text-sm tracking-tight md:col-span-3">
+                  <span
+                    className={`mr-3 inline-block h-1.5 w-1.5 rounded-full align-middle ${dotColors[i % dotColors.length]}`}
+                  />
+                  {g.heading}
+                </h3>
                 <p className="text-[1.02rem] leading-relaxed text-muted-foreground md:col-span-9">
                   {g.items}
                 </p>
@@ -202,7 +213,9 @@ function Index() {
           {learning.map((item, i) => (
             <Reveal key={item} delay={i * 60}>
               <div className="flex items-baseline gap-6 border-t border-hairline py-6">
-                <span className="display text-xl text-muted-foreground">
+                <span
+                  className={`display text-xl ${numColors[i % numColors.length]}`}
+                >
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <span className="text-[1.02rem]">{item}</span>
@@ -213,7 +226,7 @@ function Index() {
       </Section>
 
       {/* Activities */}
-      <Section id="activities" label="Learning & Activities">
+      <Section id="activities" label="Learning & Activities" tint="rose">
         <div className="grid gap-10 md:grid-cols-12">
           <Reveal className="md:col-span-5">
             <h2 className="display text-4xl md:text-5xl">Things I&rsquo;m involved in</h2>

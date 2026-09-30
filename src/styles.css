@@ -34,6 +34,11 @@
   --color-hairline: var(--hairline);
   --color-surface: var(--surface);
   --color-olive: var(--olive);
+  --color-marigold: var(--marigold);
+  --color-dusk: var(--dusk);
+  --color-blush: var(--blush);
+  --color-wash-blue: var(--wash-blue);
+  --color-wash-rose: var(--wash-rose);
 }
 
 :root {
@@ -56,6 +61,11 @@
   --accent: oklch(0.884 0.031 64.3);
   --accent-foreground: oklch(0.40 0.12 44);
   --olive: oklch(0.583 0.051 114.6);
+  --marigold: oklch(0.71 0.125 74);
+  --dusk: oklch(0.51 0.095 250);
+  --blush: oklch(0.64 0.10 20);
+  --wash-blue: oklch(0.956 0.012 250);
+  --wash-rose: oklch(0.956 0.018 30);
   --destructive: oklch(0.51 0.16 25);
   --destructive-foreground: oklch(0.985 0.006 85);
   --border: oklch(0.895 0.012 78);
@@ -81,6 +91,11 @@
   --accent: oklch(0.30 0.035 48);
   --accent-foreground: oklch(0.85 0.09 50);
   --olive: oklch(0.75 0.06 114);
+  --marigold: oklch(0.8 0.12 78);
+  --dusk: oklch(0.74 0.08 250);
+  --blush: oklch(0.74 0.09 20);
+  --wash-blue: oklch(0.26 0.015 250);
+  --wash-rose: oklch(0.26 0.02 30);
   --destructive: oklch(0.6 0.16 25);
   --destructive-foreground: oklch(0.95 0.006 85);
   --border: oklch(1 0 0 / 12%);
