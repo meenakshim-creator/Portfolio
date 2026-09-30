@@ -117,7 +117,7 @@ function Index() {
       <Section id="about" label="About">
         <div className="grid gap-10 md:grid-cols-12">
           <Reveal className="md:col-span-5">
-            <h2 className="display text-4xl md:text-5xl">A little about me</h2>
+            <h2 className="display text-5xl md:text-6xl">A little about me</h2>
           </Reveal>
           <Reveal delay={100} className="md:col-span-6 md:col-start-7">
             <div className="space-y-6 text-[1.02rem] leading-relaxed text-muted-foreground">
@@ -149,7 +149,7 @@ function Index() {
           {skillGroups.map((g, i) => (
             <Reveal key={g.heading} delay={i * 70}>
               <div className="grid gap-3 border-t border-hairline py-8 md:grid-cols-12 md:gap-10">
-                <h3 className="text-sm tracking-tight md:col-span-3">
+                <h3 className="text-base tracking-tight md:col-span-3">
                   <span
                     className={`mr-3 inline-block h-1.5 w-1.5 rounded-full align-middle ${dotColors[i % dotColors.length]}`}
                   />
@@ -173,7 +173,7 @@ function Index() {
       <Section id="education" label="Education">
         <div className="grid gap-10 md:grid-cols-12">
           <Reveal className="md:col-span-5">
-            <h2 className="display text-4xl md:text-5xl">Where I&rsquo;m studying</h2>
+            <h2 className="display text-5xl md:text-6xl">Where I&rsquo;m studying</h2>
           </Reveal>
           <Reveal delay={100} className="md:col-span-6 md:col-start-7">
             <div className="relative border-l border-hairline pl-8">
@@ -205,7 +205,7 @@ function Index() {
       {/* Currently learning */}
       <Section id="learning" label="Currently Learning">
         <Reveal>
-          <h2 className="display max-w-2xl text-4xl md:text-5xl">
+          <h2 className="display max-w-2xl text-5xl md:text-6xl">
             What I&rsquo;m learning right now
           </h2>
         </Reveal>
@@ -229,7 +229,7 @@ function Index() {
       <Section id="activities" label="Learning & Activities" tint="rose">
         <div className="grid gap-10 md:grid-cols-12">
           <Reveal className="md:col-span-5">
-            <h2 className="display text-4xl md:text-5xl">Things I&rsquo;m involved in</h2>
+            <h2 className="display text-5xl md:text-6xl">Things I&rsquo;m involved in</h2>
           </Reveal>
           <Reveal delay={100} className="md:col-span-6 md:col-start-7">
             <ul className="text-[1.02rem]">
@@ -247,7 +247,7 @@ function Index() {
       <Section id="contact" label="Contact">
         <div className="grid gap-14 md:grid-cols-12">
           <Reveal className="md:col-span-6">
-            <h2 className="display text-5xl md:text-6xl">Let&rsquo;s talk.</h2>
+            <h2 className="display text-6xl md:text-7xl">Let&rsquo;s talk.</h2>
             <p className="mt-8 max-w-md text-[1.02rem] leading-relaxed text-muted-foreground">
               Whether it&rsquo;s a project, an internship opportunity, a technical discussion, or
               simply an interesting idea — I&rsquo;d be happy to connect.
