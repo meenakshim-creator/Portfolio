@@ -48,14 +48,17 @@ export function Reveal({
 export function Section({
   id,
   label,
+  tint,
   children,
 }: {
   id: string;
   label: string;
+  tint?: "blue" | "rose";
   children: ReactNode;
 }) {
+  const tintCls = tint === "blue" ? "bg-wash-blue" : tint === "rose" ? "bg-wash-rose" : "";
   return (
-    <section id={id} className="border-t border-hairline">
+    <section id={id} className={`border-t border-hairline ${tintCls}`}>
       <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-10 md:py-28 lg:px-14">
         <Reveal>
           <p className="eyebrow mb-12 md:mb-16">{label}</p>
