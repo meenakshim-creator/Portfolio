@@ -15,7 +15,18 @@ Continue developing this project in the [Lovable editor](https://lovable.dev/pro
 ## Development
 
 Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Future Improvements
 
+- Add more projects.
+- Improve website animations.
+- Add a downloadable resume.
+- Add more responsive features.
+- Improve contact functionality.
+
+## Recent Updates
+
+Portfolio README updated using
+a separate GitHub branch.
 ```sh
 git clone <this-repository-url>
 cd <repository-name>
