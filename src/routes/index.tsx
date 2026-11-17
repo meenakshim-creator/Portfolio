@@ -256,7 +256,7 @@ function Index() {
               {[
                 ["Email", "your-email@example.com"],
                 ["LinkedIn", "linkedin.chttps://www.linkedin.com/in/meenakshi-mishra-27327a380?utm_source=share_via&utm_content=profile&utm_medium=member_androidom/in/your-profile"],
-                ["GitHub", "github.com/your-username"],
+                ["GitHub", "https://github.com/meenakshim-creator"],
               ].map(([k, v]) => (
                 <div key={k} className="flex flex-wrap items-baseline gap-x-6">
                   <dt className="eyebrow w-20">{k}</dt>
