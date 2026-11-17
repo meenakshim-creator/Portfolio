@@ -255,7 +255,7 @@ function Index() {
             <dl className="mt-12 space-y-4 text-[1.02rem]">
               {[
                 ["Email", "your-email@example.com"],
-                ["LinkedIn", "linkedin.com/in/your-profile"],
+                ["LinkedIn", "linkedin.chttps://www.linkedin.com/in/meenakshi-mishra-27327a380?utm_source=share_via&utm_content=profile&utm_medium=member_androidom/in/your-profile"],
                 ["GitHub", "github.com/your-username"],
               ].map(([k, v]) => (
                 <div key={k} className="flex flex-wrap items-baseline gap-x-6">
