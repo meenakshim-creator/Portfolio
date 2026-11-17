@@ -254,7 +254,7 @@ function Index() {
             </p>
             <dl className="mt-12 space-y-4 text-[1.02rem]">
               {[
-                ["Email", "your-email@example.com"],
+                ["Email", "meenakshimishra323@gmail.com"],
                 ["LinkedIn", "linkedin.chttps://www.linkedin.com/in/meenakshi-mishra-27327a380?utm_source=share_via&utm_content=profile&utm_medium=member_androidom/in/your-profile"],
                 ["GitHub", "https://github.com/meenakshim-creator"],
               ].map(([k, v]) => (
